@@ -1,0 +1,87 @@
+
+/*         ___    __                                   ___           */
+/*        /\_ \  /\ \__                              /'___\ __       */
+/*  __  __\//\ \ \ \ ,_\  _ __    __     _ __   ___ /\ \__//\_\      */
+/* /\ \/\ \ \ \ \ \ \ \/ /\`'__\/'__`\  /\`'__\/ __`\ \ ,__\/\ \     */
+/* \ \ \_\ \ \_\ \_\ \ \_\ \ \//\ \L\.\_\ \ \//\ \L\ \ \ \_/\ \ \    */
+/*  \ \____/ /\____\\ \__\\ \_\\ \__/.\_\\ \_\\ \____/\ \_\  \ \_\   */
+/*   \/___/  \/____/ \/__/ \/_/ \/__/\/_/ \/_/ \/___/  \/_/   \/_/   */
+
+@import "colors.rasi"
+*{  
+    background-color:            @background;
+    selected-normal-background:  @foreground;
+    text-color:                  @foreground;
+}
+
+window
+{
+    transparency:            "real";
+    x-offset:                -38.55%;
+    y-offset:                1.72%;
+    height:                  96.69%;
+    width:                   2%;
+    orientation:             east;
+    padding:                 10px;
+    border:                  1px;
+    width:                   23%;
+    border:                  1;
+    border-color:            @black;
+}
+inputbar
+{
+    border:                  1 0 1px 0;
+    children:                [prompt,entry];
+}
+prompt
+{
+    padding:                  8px 16px 16px 16px ;
+    enabled:                  true;
+    border:                   0 1px 0 0;
+    text-color:               @cyan;
+    font:                     "JetBrainsMono Nerd Font 20";
+}
+entry
+{
+    padding:                  16px;
+    text-color:               @foreground;
+    font:                     "JetBrainsMono Nerd Font  13";
+}
+listview
+{
+    cycle:                    false;
+    margin:                   0 0 1px 0;
+    scrollbar:                false;
+    border-color:             @black;
+}
+element
+{
+    border:                   0;
+    padding:                  8px;
+}
+element-text {
+    background-color:         inherit;
+    text-color:               inherit;
+}
+element-icon
+{
+    background-color:         inherit;
+    size:                     23px ;
+    margin:                   0 0 1px 0;
+}
+
+element selected
+{
+    background-color:         @yellow;
+    text-color:               @black;
+    border:                   0% 0% 0% 0%;
+    border-radius:            15px;
+}
+element.selected.normal {
+    background-color:         @green;
+    text-color:               @black;
+}
+button.selected {
+    background-color:         @green;
+    text-color:               @black;
+}

@@ -1,0 +1,32 @@
+
+/*         ___    __                                   ___           */
+/*        /\_ \  /\ \__                              /'___\ __       */
+/*  __  __\//\ \ \ \ ,_\  _ __    __     _ __   ___ /\ \__//\_\      */
+/* /\ \/\ \ \ \ \ \ \ \/ /\`'__\/'__`\  /\`'__\/ __`\ \ ,__\/\ \     */
+/* \ \ \_\ \ \_\ \_\ \ \_\ \ \//\ \L\.\_\ \ \//\ \L\ \ \ \_/\ \ \    */
+/*  \ \____/ /\____\\ \__\\ \_\\ \__/.\_\\ \_\\ \____/\ \_\  \ \_\   */
+/*   \/___/  \/____/ \/__/ \/_/ \/__/\/_/ \/_/ \/___/  \/_/   \/_/   */
+
+configuration {
+	/* -rofi mode settings- */
+	modi: "drun,run,filebrowser,window";
+	show-icons: true;
+	case-sensitive: false;
+	steal-focus: false;
+	filter: "";
+	scroll-method: 0;
+	normalize-match: true;
+
+	/* -ssh settings- */
+	ssh-client: "ssh";
+	ssh-command: "{terminal} -e {ssh-client} {host} [-p {port}]";
+	parse-hosts: true;
+	parse-known-hosts: true;
+
+	/*---------- Misc setting ----------*/
+	terminal: "alacritty";
+	sort: false;
+	threads: 0;
+    font: "JetBrainsMono Nerd Font 12";
+}
+@theme            "~/.config/rofi/ultralauncher.rasi"
